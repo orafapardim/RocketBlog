@@ -1,5 +1,5 @@
 # Rocket Blog
-> Proposta de desenvolvimento de homepage para o blog da Rocket Blog! A idealização e o layout da foi lançado na plataforma da @Rocketseat, no painel de Desafios!
+> Desafio da @rocketseat para iniciantes em front-end: Desenvolvimento do layout da homepage para Rocket Blog.
 
 <img src="https://user-images.githubusercontent.com/83538547/160217464-4894672b-01e2-41a3-b7a2-7e0339afb205.png" width="100%">
 
