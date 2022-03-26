@@ -1,0 +1,16 @@
+.menu-nav {
+  @include flx(center, row, space-between);
+  gap: 2rem;
+  order: 2;
+  overflow-x: scroll;
+  padding: 1rem 0;
+  width: 100%;
+
+  @include for-desktop-only {
+    border: none;
+    gap: 1rem;
+    justify-content:  center;
+    order: 0;
+    overflow-x: initial;
+  }
+}

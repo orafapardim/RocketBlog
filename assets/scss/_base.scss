@@ -1,0 +1,66 @@
+/* Váriaveis de cores */
+$black-100: #000;
+$green: #4FFF4B;
+$purple-dark: #170027;
+$purple-100: #290742;
+$purple-50: #9E6DC2;
+$purple-20: #FBF6FF;
+$white: #FFFFFF;
+
+/* Mixins */
+@mixin flx ($align, $direction, $justify) {
+  align-items: $align;
+  flex-direction: $direction;
+  display: flex;
+  justify-content: $justify;
+}
+
+@mixin grd-pos ($column-start, $column-end, $row-start, $row-end) {
+  grid-column-start: $column-start;
+  grid-column-end: $column-end;
+  grid-row-start: $row-start;
+  grid-row-end: $row-end;
+}
+
+@mixin for-phone-only {
+  @media (max-width: 425.98px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-only {
+  @media (min-width: 425.98px) and (max-width: 768.98px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-only {
+  @media (min-width: 768.98px) {
+    @content;
+  }
+}
+
+@mixin for-ultrawaid-only {
+  @media (min-width: 1900.98px) {
+    @content;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: $purple-100;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 2rem;
+  width: 100%;
+
+  @include for-phone-only {
+    padding: 0 1rem;
+  }
+}

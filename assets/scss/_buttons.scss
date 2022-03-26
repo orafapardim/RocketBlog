@@ -1,0 +1,22 @@
+.btn {
+  border-radius: .5rem;
+  font-size: 1rem;
+  font-weight: normal;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @include for-desktop-only {
+    font-weight: bold;
+  }
+
+  &--search {
+    background: url(../img/icons/search.svg) no-repeat center / auto border-box scroll, $purple-50;
+    border: none;
+    border-radius: 0 .5rem .5rem 0;
+    height: 2.5rem;
+    padding: .5rem 2rem;
+    width: 3rem;
+  }
+}

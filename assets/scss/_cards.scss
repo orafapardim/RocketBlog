@@ -1,0 +1,29 @@
+.card__product {
+  @include flx(center, column, space-between);
+  gap: .75rem;
+  height: 100%;
+  position: relative;
+  width: 100%;
+
+  .text, .subtitle {
+    flex-grow: 1;
+    height: 2rem;
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center;
+    width: 120px;
+  }
+}
+
+.card__article {
+  @include flx(flex-start, column, flex-start);
+  gap: .5rem;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.article__image {
+  max-width: 600px;
+  width: 100%;
+}

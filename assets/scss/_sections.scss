@@ -1,0 +1,62 @@
+.banner {
+  background: $purple-100;
+  border-bottom: .375rem solid $green;
+
+  & .container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+
+    @include for-phone-only {
+      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+  }
+
+  .title {
+    color: $purple-50;
+    font-size: 2.25rem;
+    line-height: 3rem;
+  }
+
+  .text {
+    color: $white;
+  }
+
+  & article {
+    @include flx(flex-start, column, space-around);
+    gap: 1.5rem;
+    max-width: 100%;
+
+    & .title {
+      width: 100%;
+    }
+  }
+
+  &--image {
+    max-height: 360px;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.emphasis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+
+  @include for-tablet-only {
+    gap: 1rem;
+  }
+
+  @include for-phone-only {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+}
+
+.news {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}

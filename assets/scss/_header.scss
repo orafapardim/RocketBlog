@@ -1,0 +1,35 @@
+.header {
+  @include flx(center, row, space-between);
+  border: none;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  position: relative;
+  width: 100%;
+
+  .link--inherit {
+    min-width: 120px;
+    max-width: 176px;
+    width: 30%;
+
+    .logo {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  @include for-desktop-only {
+    flex-wrap: nowrap;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+
+    .logo {
+      width: auto;
+    }
+
+    .search-bar {
+      display: flex;
+    }
+  }
+}

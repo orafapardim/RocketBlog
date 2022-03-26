@@ -1,0 +1,44 @@
+.link {
+  color: $white;
+  font-size: 1rem;
+  text-decoration: none;
+
+  &:hover {
+    color: $purple-50;
+    cursor: pointer;
+  }
+
+  &--ativo {
+    border-left: .125rem solid $green;
+    padding-left: .3rem;
+  }
+
+  &--arrow {
+    color: $purple-50;
+    font-weight: bold;
+    padding-right: 1.75rem;
+    position: relative;
+
+    &:hover {
+      border-bottom: none;
+      letter-spacing: .0625rem;
+    }
+
+    &::after {
+      content: url(../img/icons/arrow-green.svg);
+      padding-left: .2rem;
+      position: absolute;
+      top: 60%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &--inherit {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    height: 100%;
+    text-decoration: inherit;
+    width: auto;
+  }
+}

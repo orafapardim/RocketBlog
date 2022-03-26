@@ -1,0 +1,38 @@
+html {
+  color: $black-100;
+  font: normal 1rem 'Roboto', sans-serif;
+}
+
+.title {
+  color: $purple-100;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+.text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+@include for-tablet-only {
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+}
+
+@include for-phone-only {
+  .title {
+    font-size: 1rem;
+  }
+
+  .text {
+    font-size: .875rem;
+  }
+}
